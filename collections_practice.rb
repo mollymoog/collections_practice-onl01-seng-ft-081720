@@ -48,6 +48,6 @@ def add_s(array)
   second = array.delete_at(1)
   array.collect do |word| 
     word + "s"
-    
   end
+  array.insert(1, second)
 end
